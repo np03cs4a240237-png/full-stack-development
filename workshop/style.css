@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: #e0f2fe;
+  color: #0f172a;
+}
+
+img,
+video,
+audio {
+  max-width: 100%;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #bae6fd;
+  padding: 14px 20px;
+  border-bottom: 1px solid #7dd3fc;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+nav a {
+  color: #0369a1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+h2,
+h3 {
+  margin-bottom: 10px;
+  color: #0c4a6e;
+}
+
+.course-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.item {
+  flex: 1 1 240px;
+  background: #f0f9ff;
+  border: 1px solid #7dd3fc;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.item:hover {
+  background: #ffffff;
+}
+
+.item img {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+#notes ul,
+aside ul,
+footer ul {
+  padding-left: 18px;
+}
+
+figure {
+  background: #f0f9ff;
+  border: 1px solid #7dd3fc;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+}
+
+figure img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+figcaption {
+  font-size: 14px;
+  color: #0369a1;
+  margin-top: 6px;
+}
+
+video,
+audio {
+  display: block;
+  margin-bottom: 12px;
+}
+
+aside {
+  background: #f0f9ff;
+  border: 1px solid #7dd3fc;
+  border-radius: 6px;
+  padding: 14px;
+  align-self: start;
+}
+
+aside a {
+  color: #0284c7;
+}
+
+footer {
+  background: #bae6fd;
+  padding: 20px;
+  border-top: 1px solid #7dd3fc;
+}
+
+.foot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+footer a {
+  color: #0369a1;
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .foot-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .foot-grid {
+    grid-template-columns: 1fr;
+  }
+}

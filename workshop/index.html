@@ -1,136 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestNotes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>NestNotes</h1>
+      <nav>
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#notes">Notes</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#aside">Updates</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- EXERCISE 10 -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <div class="wrapper">
+      <main>
+        <section id="courses">
+          <h2>Courses</h2>
+          <div class="course-row">
+            <article class="item">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=700&q=80"
+                alt="Laptop showing code on a desk"
+              />
+              <h3>Web Development</h3>
+              <p>HTML and CSS basics for building web pages.</p>
+              <a href="#notes">View notes</a>
+            </article>
 
-  <title>Sarayu Gautam</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+            <article class="item">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80"
+                alt="Code editor on a dark monitor"
+              />
+              <h3>Programming</h3>
+              <p>Problem solving and weekly lab exercises.</p>
+              <a href="#notes">View notes</a>
+            </article>
+          </div>
+        </section>
 
-  <header class="site-header">
-    <nav>
-
-      <a href="#" class="logo">Sarayu <span>Gautam</span></a>
-
-      <ul class="nav-links">
-        <li><a href="#work">Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <div class="content">
-
-      <section class="hero">
-        <img src="images/hero.svg" alt="Abstract geometric composition">
-        <div class="hero-text">
-          <p class="eyebrow">Full stack / Kathmandu</p>
-          <h1>Sarayu Gautam</h1>
-          <p>I build small web tools that solve one problem properly, and
-             I teach other people how to build them too.</p>
-          <a href="#work" class="button">Selected work</a>
-        </div>
-      </section>
-
-      <section class="gallery-section" id="work">
-        <h2>Selected work</h2>
-
-        <div class="gallery">
-
-          <article class="card feature">
-            <img src="images/card-1.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>01</span>PHP / MySQL</p>
-              <h3>Marks Ledger</h3>
-              <p>A gradebook that replaced fourteen spreadsheets. Handles
-                 four modules, six assessment points, and one very
-                 opinionated export format.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
+        <section id="notes">
+          <h2>Study Notes</h2>
+          <article>
+            <h3>Workshop Topics</h3>
+            <ul>
+              <li>Semantic HTML tags</li>
+              <li>Flexbox layouts</li>
+              <li>CSS Grid and media queries</li>
+            </ul>
           </article>
+        </section>
 
-          <article class="card">
-            <img src="images/card-2.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>02</span>JavaScript</p>
-              <h3>Route 27</h3>
-              <p>Bus timings for the route I actually take.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
+        <section id="media">
+          <h2>Media</h2>
+          <figure class="wide-media">
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80"
+              alt="Screen displaying programming code"
+            />
+            <figcaption>Figure 1: Study screen setup for practice.</figcaption>
+          </figure>
 
-          <article class="card">
-            <img src="images/card-3.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>03</span>PHP</p>
-              <h3>Load Shedding</h3>
-              <p>Area schedules, searchable, with no adverts on it.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
+          <video controls>
+            <source
+              src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+              type="video/mp4"
+            />
+            Video not supported.
+          </video>
 
-          <article class="card">
-            <img src="images/card-4.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>04</span>CSS</p>
-              <h3>Type Tester</h3>
-              <p>Devanagari and Latin side by side, at real sizes.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
+          <audio controls>
+            <source
+              src="https://upload.wikimedia.org/wikipedia/commons/4/42/Bird_singing.ogg"
+              type="audio/ogg"
+            />
+            Audio not supported.
+          </audio>
+        </section>
+      </main>
 
-          <article class="card">
-            <img src="images/card-5.svg" alt="">
-            <div class="card-body">
-              <p class="card-meta"><span>05</span>JavaScript</p>
-              <h3>Momo Index</h3>
-              <p>Every momo place near the college, ranked properly.</p>
-              <a href="#" class="card-link">Read more</a>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
+      <aside id="aside">
+        <h2>Notices</h2>
+        <ul>
+          <li>Push Week 1 work to GitHub branch and server.</li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/"
+              target="_blank"
+              rel="noopener"
+              >MDN Web Docs</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/" target="_blank" rel="noopener"
+              >CSS-Tricks</a
+            >
+          </li>
+        </ul>
+      </aside>
     </div>
 
-    <aside id="about">
-      <h2>About</h2>
-
-      <figure>
-        <img src="images/profile.svg" alt="Abstract portrait mark">
-        <figcaption>Sarayu Gautam, Kathmandu.</figcaption>
-      </figure>
-
-      <p>I teach full stack web development at Herald College Kathmandu
-         and build things in PHP and JavaScript the rest of the time.</p>
-
-      <h3 id="teaching">Teaching</h3>
-      <dl class="meta-list">
-        <dt>Module</dt>
-        <dd>5CS045 Full Stack Web Development</dd>
-        <dt>Prerequisite</dt>
-        <dd>Internet Software Architecture</dd>
-        <dt>Term</dt>
-        <dd>Twelve weeks, one project</dd>
-      </dl>
-    </aside>
-
-  </main>
-
-  <footer id="contact">
-    <p>Herald College Kathmandu</p>
-    <p class="footer-mail"><a href="#">sarayu@example.com</a></p>
-    <small>Built for 5CS045 Full Stack Web Development, Week 1.</small>
-  </footer>
-
-</body>
+    <footer>
+      <div class="foot-grid">
+        <div>
+          <h3>NestNotes</h3>
+          <p>Student learning resources.</p>
+        </div>
+        <div>
+          <h3>Sections</h3>
+          <ul>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="#media">Media</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Course</h3>
+          <p>Week 1 Workshop</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
